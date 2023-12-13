@@ -85,3 +85,6 @@ print(predictions_zimbabue)
 
 print("\nPredictions for liberia:")
 print(predictions_liberia)
+
+export_path = 'linear-model/1/'
+tf.saved_model.save(linear_model, os.path.join('./',export_path))
