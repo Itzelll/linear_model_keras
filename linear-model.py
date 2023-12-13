@@ -1,7 +1,7 @@
 # adsoft
 import numpy as np
 import os
-import pandas as pd  # Add import for pandas
+#import pandas as pd
 
 # TensorFlow
 import tensorflow as tf
@@ -23,7 +23,8 @@ def circulo(num_datos=500000, R=1, centro_lat=0, centro_lon=0):
     y = np.round(y, 6)
 
     # Crea un DataFrame con las coordenadas
-    df = pd.DataFrame({'lat': y, 'lon': x})
+    #df = pd.DataFrame({'lat': y, 'lon': x})
+    df = np.column_stack([x,y])
     return df
 
 #coordenadas zimbabue: -18.962069424880788, 29.921221655885887
